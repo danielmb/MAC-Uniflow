@@ -43,7 +43,7 @@ namespace Uniflowprinterinstaller
                 base.RepresentedObject = value;
                 // Update the view, if already loaded.
             }
-        }
+        }   
 
         partial void click(Foundation.NSObject sender)
         {
