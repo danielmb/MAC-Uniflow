@@ -55,7 +55,6 @@ namespace Uniflowprinterinstaller
             alert.MessageText = "Feil!";
             alert.InformativeText = "Får ingen tilkobling til NFK, ta kontakt med IT-Avdelingen";
             alert.RunModal();
-
         }
         public static string Bash(string cmd)
         {
