@@ -13,7 +13,19 @@ namespace Uniflowprinterinstaller
 	partial class ViewController
 	{
 		[Outlet]
+		AppKit.NSButton login { get; set; }
+
+		[Outlet]
+		AppKit.NSImageView okonami { get; set; }
+
+		[Outlet]
 		AppKit.NSSecureTextField password { get; set; }
+
+		[Outlet]
+		AppKit.NSProgressIndicator progressBar { get; set; }
+
+		[Outlet]
+		AppKit.NSTextField progressLog { get; set; }
 
 		[Outlet]
 		AppKit.NSTextField username { get; set; }
@@ -23,14 +35,34 @@ namespace Uniflowprinterinstaller
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (username != null) {
-				username.Dispose ();
-				username = null;
+			if (login != null) {
+				login.Dispose ();
+				login = null;
+			}
+
+			if (okonami != null) {
+				okonami.Dispose ();
+				okonami = null;
 			}
 
 			if (password != null) {
 				password.Dispose ();
 				password = null;
+			}
+
+			if (progressBar != null) {
+				progressBar.Dispose ();
+				progressBar = null;
+			}
+
+			if (username != null) {
+				username.Dispose ();
+				username = null;
+			}
+
+			if (progressLog != null) {
+				progressLog.Dispose ();
+				progressLog = null;
 			}
 		}
 	}
